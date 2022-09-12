@@ -1,18 +1,3 @@
-========== HOME ==========
-.home__subtitle
-MAKE YOUR
-
-.home__title
-BODY SHAPE
-
-.home__description
-In here we will help you to shape and build your ideal 
-body and live your life to the fullest.
-
-.button
-Get Started
-
-
 ========== PROGRAM ==========
 .section__subtitle
 Our Program
