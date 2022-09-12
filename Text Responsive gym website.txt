@@ -1,31 +1,3 @@
-========== PROGRAM ==========
-.section__subtitle
-Our Program
-
-.section__title-border
-BUILD YOUR
-
-.section__title
-BEST BODY
-
-.program__title | .program__description
-Flex Muscle
-Creating tension that's temporarily making the muscle 
-fibers smaller or contracted.
-
-Cardio Exercise
-Exercise your heart rate up and keeps it 
-up for a prolonged period of time.
-
-Basic Yoga
-Diaphragmatic this is the most common breathing 
-technique you'll find in yoga.
-
-Weight Lifting
-Attempts a maximum weight single lift of a 
-barbell loaded with weight plates.
-
-
 ========== CHOOSE US ==========
 .section__subtitle
 Best Reason
