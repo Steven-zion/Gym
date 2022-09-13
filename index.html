@@ -410,7 +410,41 @@ only bad workout is the one you didn't do.
             </section>
 
             <!--==================== CALCULATE ====================-->
-            <section class="calculate section"></section>
+            <section class="calculate section">
+                <div class="calculate__container container grid">
+                    <div class="calculate__content">
+                        <div class="section__titles">
+                            <h1 class="section__title-border">CALCULATE</h1>
+                            <h1 class="section__title">YOUR BMI</h1>
+                        </div>
+
+                        <P class="calculate__description">
+                            The body mass index (BMI) calculator calculates 
+body mass index from your weight and height.
+                        </P>
+
+                        <form action="" class="calculate__form" id="calculate-form">
+                            <div class="calculate__box">
+                                <input type="number" placeholder="height" class="calculate__input" id="calculate-cm">
+                                <label for="" class="calculate__label">cm</label>
+                            </div>
+
+                            <div class="calculate__box">
+                                <input type="number" placeholder="weight" class="calculate__input" id="calculate-kg">
+                                <label for="" class="calculate__label">kg</label>
+                            </div>
+
+                            <button type="submit" class="btn btn__flex">
+                                Calculate Now <i class="ri-arrow-right-line"></i>
+                            </button>
+                        </form>
+
+                        <p class="calculate__msg" id="calculate__msg">Your BMI is </p>
+                    </div>
+
+                    <img src="assets/img/calculate-img.png" alt="calculate image" class="calculate__img">
+                </div>
+            </section>
         </main>
 
         <!--==================== FOOTER ====================-->
