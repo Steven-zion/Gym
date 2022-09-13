@@ -80,7 +80,7 @@ Calculate Now
 	// Add and remove color
 	// Show message
 		Fill in the Height and Weight
-	// Remove message three seconds
+	
 
 // BMI Formula
 
