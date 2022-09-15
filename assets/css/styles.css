@@ -803,9 +803,20 @@ img {
   transition: background .4s;
 }
 
-.foot
+.footer__social-link:hover {
+  background-color: var(--first-color-dark);
+}
 
+.footer__copy {
+  font-size: var(--smaller-font-size);
+  text-align: center;
+  color: var(--text-color-light);
+}
 
+.footer__msg {
+  position: absolute;
+  transform: translateY(1rem);
+}
 
 
 
