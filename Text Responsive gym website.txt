@@ -141,7 +141,7 @@ https://www.instagram.com/
 
 	// Remove message three seconds
 
-// serviceID - templateID - #form - publicKey
+
 
 // Show message and add color
 	You registered successfully

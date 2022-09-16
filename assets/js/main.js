@@ -104,3 +104,88 @@ const calculateBmi = (e)=> {
 calculateForm.addEventListener( 'submit', calculateBmi)
 
 /*=============== EMAIL JS ===============*/
+
+const contactForm = document.getElementById('contact-form'),
+    contactMsg = document.getElementById('contact-msg'),
+    contactUser = document.getElementById('contact--user')
+
+const sendEmail = (e)=> {
+	e.preventDefault()
+
+	//check if the field has a value
+	if( contactUser.value === '') {
+		//add & remove color
+		contactMsg.classList.remove('color-green')
+		contactMsg.classList.add('color-red')
+
+		//show msg
+		contactMsg.textContent = ' Please enter your email '
+
+		//remove msg after 3sec
+		setTimeout(() => {
+			contactMsg.textContent = ''
+		}, 3000);
+	} else {
+		// serviceID - templateID - #form - publicKey
+		emailjs.sendForm(
+            'service_vumf5o5',
+            'template_8i7iwrt',
+            '#contact-form',
+            'igv-6_bbCZbZeAWna'
+        ).then( () =>{
+			//show msg and add color
+			contactMsg.classList.add('color-green')
+			contactMsg.textContent = 'You registered successfully 💪'
+
+			//remove msg after 3sec
+			setTimeout(() => {
+				contactMsg.textContent = ''
+			}, 3000);
+		}, (err) =>{
+			//incase of mail sending error
+			alert('OOPS! Something went wrong...', err)
+		})
+
+	//clear input fields
+	contactUser.value = ''
+	}
+}
+
+contactForm.addEventListener('submit', sendEmail)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

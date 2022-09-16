@@ -335,8 +335,6 @@ img {
 }
 
 
-
-
 /*=============== BUTTON ===============*/
 .btn{
   display: inline-block;
@@ -699,16 +697,6 @@ img {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /*=============== FOOTER ===============*/
 .footer {
   row-gap: 4rem;
@@ -819,23 +807,73 @@ img {
 }
 
 
-
-
-
 /*=============== SCROLL BAR ===============*/
+
+
 
 
 /*=============== SCROLL UP ===============*/
 
 
+
+
 /* Show Scroll Up*/
+
+
 
 
 /*=============== media queries - responsiveness ===============*/
 /* For small devices */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* For medium devices */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* For large devices */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
