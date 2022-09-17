@@ -446,6 +446,11 @@ img {
   transform: translateX(.25rem);
 }
 
+.program__card:hover {
+  background-color: hsla(79, 6%, 64%, .1);
+  border: 2px solid var(--first-color);
+}
+
 .program__card:hover i{
   background-color: var(--first-color);
   border: 2px solid var(--first-color-light);
@@ -457,7 +462,7 @@ img {
 
 .program__card:hover .program__title,
 .program__card:hover .program__description{
-  color: var(--title-color-black);
+  color: var(--title-color);
 }
 
 .program__card:hover .program__btn{
@@ -988,6 +993,10 @@ img {
     column-gap: 4rem;
   }
 
+  .nav__item i{
+    display: none;
+  }
+
   .section {
     padding: 7rem 0 0;
   }
@@ -1029,6 +1038,10 @@ img {
 
   .logos {
     padding: 3.5rem 0 1rem;
+  }
+  .logos__container{
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
   }
   .logos__img {
     width: 190px;
@@ -1168,19 +1181,3 @@ img {
     right: 3rem;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
