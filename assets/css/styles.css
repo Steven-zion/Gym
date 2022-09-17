@@ -16,9 +16,9 @@
   --title-color-black: hsl(180, 4%, 12%);
   --text-color: hsl(180, 4%, 72%);
   --text-color-light: hsl(180, 4%, 65%);
-  --body-color: hsl(180, 12%, 8%);
+  --body-color: #011;
 
-  /*========== Font and typography ==========*/
+  /*========== Font and typography hsl(180, 12%, 8%) ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: 'Red Hat Display', sans-serif;
   --second-font: 'Kaushan Script', cursive;
