@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Red+Hat+Display:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla&family=Kaushan+Script+Display:wght@400;700;900&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -20,7 +20,7 @@
 
   /*========== Font and typography hsl(180, 12%, 8%) ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: 'Red Hat Display', sans-serif;
+  --body-font: 'Karla', sans-serif;
   --second-font: 'Kaushan Script', cursive;
   --biggest-font-size: 2rem;
   --bigger-font-size: 1.5rem;
@@ -151,7 +151,7 @@ img {
   overflow: hidden; /* For animation ScrollReveal */
 }
 
-.color-green {
+.color-purple {
   color: var(--first-color);
 }
 
@@ -159,13 +159,6 @@ img {
   color: hsla(0, 80%, 64%);
 }
 
-.color-red {
-  color: hsl(0, 80%, 64%);
-}
-
-.color-green {
-  color: var(--first-color);
-}
 
 /*=============== HEADER & NAV ===============*/
 .header{
@@ -741,7 +734,7 @@ img {
   gap: 1.25rem;
 }
 
-.footer__input {
+.footer__form input {
   padding: 20px 56px 20px 24px;
   border: 2px solid var(--first-color-light);
   background: transparent;

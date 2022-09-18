@@ -77,11 +77,11 @@ const sr = ScrollReveal({
 	origin: 'top',
 	distance: '60px',
 	duration: 2500,
-	delay: 400
+	delay: 300
 })
 
 sr.reveal(`.home__data, .footer__container, .footer__group`)
-sr.reveal(`.home__img`, {delay: 700, origin:'bottom'})
+sr.reveal(`.home__img`, {delay: 600, origin:'bottom'})
 sr.reveal(`.logos__img, .program__card, .pricing__card`, {interval: 100})
 sr.reveal(`.choose__img, .calculate__content`, { origin: 'left' })
 sr.reveal(`.choose__content, .calculate__img`, { origin: 'right' })
@@ -101,16 +101,16 @@ const calculateBmi = (e)=> {
     // Check if the fields have a value
 	if( calculateCm.value === '' || calculateKg.value === '') {
         //add and remove color
-        calculateMsg.classList.remove('color-green');
+        calculateMsg.classList.remove('color-purple');
         calculateMsg.classList.add('color-red');
 
         //show msg
         calculateMsg.textContent = 'Fill in the Height and Weight ✍';
 
-        // Remove message three seconds
+        // Remove message 4sec
 		setTimeout( ()=> {
 			calculateMsg.textContent = ''
-		}, 3000)
+		}, 4000)
     } else {
 		//BMI formula
 		const cm = calculateCm.value / 100,
@@ -120,13 +120,13 @@ const calculateBmi = (e)=> {
 		// show health status
 		if( bmi <= 18.5) {
 			//add color & display msg
-			calculateMsg.classList.add('color-green')
+			calculateMsg.classList.add('color-purple');
 			calculateMsg.textContent = `Your BMI is ${bmi} and you are skinny 😌`;
 		} else if( bmi < 25) {
-			calculateMsg.classList.add('color-green');
+			calculateMsg.classList.add('color-purple');
 			calculateMsg.textContent = `Your BMI is ${bmi} and you are healthy 🥳`;
 		} else {
-			calculateMsg.classList.add('color-green');
+			calculateMsg.classList.add('color-purple');
             calculateMsg.textContent = `Your BMI is ${bmi} and you are overweight 😌`;
 		}
 
@@ -134,10 +134,10 @@ const calculateBmi = (e)=> {
 		calculateCm.value = ''
 		calculateKg.value = '';
 
-		//remove msg 4sec
+		//remove msg 5sec
 		setTimeout( ()=> {
 			calculateMsg.textContent = ''
-		}, 4000)
+		}, 5000)
 	}
 }
 
@@ -155,16 +155,16 @@ const sendEmail = (e)=> {
 	//check if the field has a value
 	if( contactUser.value === '') {
 		//add & remove color
-		contactMsg.classList.remove('color-green')
+		contactMsg.classList.remove('color-purple');
 		contactMsg.classList.add('color-red')
 
 		//show msg
 		contactMsg.textContent = ' Please enter your email '
 
-		//remove msg after 3sec
+		//remove msg after 4sec
 		setTimeout(() => {
 			contactMsg.textContent = ''
-		}, 3000);
+		}, 4000);
 	} else {
 		// serviceID - templateID - #form - publicKey
 		emailjs.sendForm(
@@ -174,13 +174,13 @@ const sendEmail = (e)=> {
             'igv-6_bbCZbZeAWna'
         ).then( () =>{
 			//show msg and add color
-			contactMsg.classList.add('color-green')
+			contactMsg.classList.add('color-purple');
 			contactMsg.textContent = 'You registered successfully 💪'
 
-			//remove msg after 3sec
+			//remove msg after 5sec
 			setTimeout(() => {
 				contactMsg.textContent = ''
-			}, 3000);
+			}, 5000);
 		}, (err) =>{
 			//incase of mail sending error
 			alert('OOPS! Something went wrong...', err)
