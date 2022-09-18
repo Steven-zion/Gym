@@ -394,7 +394,7 @@ img {
   background-color: hsla(79, 6%, 64%, .07);
   padding: 1.5rem 2rem;
   border: 2px solid transparent;
-  transition: background .3s ease-in-out, border .3s ease-in-out;
+  transition: background .5s, border .4s;
 }
 
 .program__img {
@@ -425,16 +425,16 @@ img {
 
 .program__title,
 .program__description {
-  transition: color .3s ease-in-out;
+  transition: color .5s;
 }
 
 .program__btn{
   justify-self: flex-end;
-  margin-top: 1,5rem;
+  margin-top: 1.5rem;
   font-size: 1.25rem;
   color: var(--title-color-black);
   opacity: 0;
-  transition: opacity .4s ease-in-out;
+  transition: opacity .4s;
 }
 
 .program__btn i{
