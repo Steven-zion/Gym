@@ -4,13 +4,13 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
-  
+
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(79, 72%, 55%);
-  --first-color-light: hsl(79, 97%, 77%);
-  --first-color-alt: hsl(79, 67%, 52%);
-  --first-color-dark: hsl(79, 63%, 50%);
+  --first-color: hsl(257, 40%, 49%);
+  --first-color-light: hsl(261, 55%, 60%);
+  --first-color-alt: hsl(261, 60%, 42%);
+  --first-color-dark: hsl(261, 55%, 40%);
   --first-color-gray: hsl(79, 6%, 64%);
   --title-color: hsl(180, 4%, 98%);
   --title-color-black: hsl(180, 4%, 12%);
@@ -791,15 +791,19 @@ img {
 .footer__social-link {
   display: inline-flex;
   padding: 0.35rem;
-  background-color: var(--first-color);
+  background-color: var(--first-color-dark);
   border-radius: 50%;
   font-size: 1.25rem;
   color: var(--title-color-black);
   transition: background .4s;
 }
 
+.footer__social-link i {
+  color: var(--title-color);
+}
+
 .footer__social-link:hover {
-  background-color: var(--first-color-dark);
+  background-color: var(--first-color-light);
 }
 
 .footer__copy {
